@@ -141,9 +141,9 @@ vector mlog( matrix const& m )
 
 std::ostream& operator<<( std::ostream& os, matrix const& a )
 {
-    os << "( " << a.getValue(0) <<
-		 " , " << a.getValue(1) <<
-		 " , " << a.getValue(2) << " )";
+	os<<"( "<<a.getValue(0,0)<<" , "<<a.getValue(0,1)<<" , "<<a.getValue(0,2)<<" )"<<std::endl;
+	os<<"( "<<a.getValue(1,0)<<" , "<<a.getValue(1,1)<<" , "<<a.getValue(1,2)<<" )"<<std::endl;
+	os<<"( "<<a.getValue(2,0)<<" , "<<a.getValue(2,1)<<" , "<<a.getValue(2,2)<<" )"<<std::endl;
     return os;
 }
 

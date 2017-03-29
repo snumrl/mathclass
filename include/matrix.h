@@ -114,6 +114,7 @@ extern matrix rotation( m_real, vector const& );
 extern matrix reflection( vector const& );
 extern vector Matrix2EulerAngle( const matrix& m );
 extern matrix EulerAngle2Matrix( const vector& m );
+extern quater exp( vector const& v);
 
 }
 #endif
